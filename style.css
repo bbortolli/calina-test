@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top left, indigo, fuchsia);
+}
+
+h1 {
+    text-align: right;
+    font-size: 180%;
+    color: white;
+    margin: 0;
+}
+
+.top-content{
+    display: flex;
+    flex: column;
+    align-items: left;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+form {
+    width: 50%;
+    height: 60%;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    align-items: right;
+    justify-content: right;
+    margin: 0 0 1.5em;
+}
+
+.logo {
+    width: 43px;
+    height: 43px;
+    margin-right: 10px;
+}
+
+#nome {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0);
+    font: inherit;
+    width: 100%;
+    padding: 0.5em 0.8em;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    transition: box-shadow 0.3s;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+textarea {
+    resize: none;
+}
+
+p {
+    margin: 0 0 0.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.inputs {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.control {
+    text-align: left;
+}
+
+button {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0);
+    display: inline-block;
+    margin-top: 1em;
+    color: white;
+    font-size: 90%;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-family: inherit;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover, button.sent {
+    color: indigo;
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+::placeholder {
+    color: white;
+}
+
+.contload {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contload.show {
+    display: flex;
+}
+
+#loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid fuchsia;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
