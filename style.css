@@ -22,10 +22,7 @@ h1 {
 }
 
 .top-content{
-    display: flex;
-    flex: column;
-    align-items: left;
-    padding: 10px;
+    margin: 10px;
     border-bottom: 2px solid white;
 }
 
@@ -42,8 +39,6 @@ form {
 }
 
 .form-title{
-    align-items: right;
-    justify-content: right;
     margin: 0 0 1.5em;
 }
 
